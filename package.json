@@ -1,0 +1,59 @@
+{
+  "name": "teess",
+  "version": "0.0.23",
+  "description": "Opinionated TypeScript wrapper around Express.js, EJS and SQL Server.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "types": "index.d.ts",
+  "homepage": "https://github.com/tech-espm/labs-teess",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-espm/labs-teess.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tech-espm/labs-teess/issues"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "ejs",
+    "express",
+    "expressjs",
+    "typescript",
+    "sql server",
+    "wrapper"
+  ],
+  "author": {
+    "name": "Carlos Rafael Gimenes das Neves",
+    "email": "carlosrafaelgn@gmail.com",
+    "url": "https://github.com/carlosrafaelgn"
+  },
+  "contributors": [
+    {
+      "name": "Carlos Rafael Gimenes das Neves",
+      "email": "carlosrafaelgn@gmail.com",
+      "url": "https://github.com/carlosrafaelgn"
+    }
+  ],
+  "license": "MIT",
+  "bundledDependencies": [],
+  "dependencies": {
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.6",
+    "ejs": "3.1.8",
+    "express": "4.18.1",
+    "express-ejs-layouts": "2.5.1",
+    "lru-cache": "7.14.0",
+    "multer": "1.4.5-lts.1",
+    "mssql": "9.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.13",
+    "@types/express-serve-static-core": "4.17.28",
+    "@types/mssql": "8.1.1",
+    "@types/node": "14.14.21"
+  }
+}
