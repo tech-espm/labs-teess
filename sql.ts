@@ -141,7 +141,7 @@ export class SqlPool implements SqlPoolInterface {
 		try {
 			return await callback(transaction);
 		} finally {
-			transaction.rollback();
+			await transaction.rollback();
 		}
 	}
 }

@@ -70,7 +70,7 @@ class SqlPool {
 			return await callback(transaction);
 		}
 		finally {
-			transaction.rollback();
+			await transaction.rollback();
 		}
 	}
 }
