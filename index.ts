@@ -2375,7 +2375,7 @@ const app: App = {
 		if (config.sqlConfig) {
 			// Only require our Sql module if it is actually going to be used.
 			const sql = require("./sql");
-			sql.init(config.sqlConfig);
+			await sql.init(config.sqlConfig);
 			app.sql = sql.sqlPool;
 		}
 
