@@ -15,7 +15,7 @@ module.exports = {
 
 	importFile: function (absolutePath) {
 		const lcase = absolutePath.toLowerCase(),
-			isJs = lcase.endsWith(".js");
+			isJs = lcase.endsWith(".js") || lcase.endsWith(".ts");
 
 		// https://v8.dev/features/dynamic-import
 		// https://techsparx.com/nodejs/esnext/dynamic-import.html

@@ -2026,8 +2026,9 @@ async function extractRoutesFromDir(config: app.Config, validHttpMethods: ValidH
 		const name = names[i],
 			lcaseName = name.toLowerCase();
 		let absolutePath: string;
-		if ((lcaseName.endsWith(".js") || lcaseName.endsWith(".cjs") || lcaseName.endsWith(".mjs")) && !fs.statSync(absolutePath = path.join(dir, name)).isDirectory()) {
-			await extractRoutesFromFile(config, validHttpMethods, prefix, routes, importer, absolutePath, name.substr(0, name.length - 3));
+		const ext4 = lcaseName.endsWith(".cjs") || lcaseName.endsWith(".mjs");
+		if ((lcaseName.endsWith(".js") || lcaseName.endsWith(".ts") || ext4) && !fs.statSync(absolutePath = path.join(dir, name)).isDirectory()) {
+			await extractRoutesFromFile(config, validHttpMethods, prefix, routes, importer, absolutePath, name.substr(0, name.length - (ext4 ? 4 : 3)));
 			names.splice(i, 1);
 		}
 	}

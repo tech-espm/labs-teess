@@ -1,6 +1,6 @@
 {
   "name": "teess",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Opinionated TypeScript wrapper around Express.js, EJS and SQL Server.",
   "main": "index.js",
   "engines": {
