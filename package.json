@@ -1,6 +1,6 @@
 {
   "name": "teess",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "Opinionated TypeScript wrapper around Express.js, EJS and SQL Server.",
   "main": "index.js",
   "engines": {
@@ -42,9 +42,9 @@
   "bundledDependencies": [],
   "dependencies": {
     "compression": "1.7.4",
-    "cookie-parser": "1.4.6",
+    "cookie-parser": "1.4.7",
     "ejs": "3.1.10",
-    "express": "4.21.0",
+    "express": "4.21.1",
     "express-ejs-layouts": "2.5.1",
     "lru-cache": "7.14.0",
     "multer": "1.4.5-lts.1",
